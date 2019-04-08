@@ -6,22 +6,22 @@ class EchauffementStrategy(Strategy):
         Strategy.__init__(self,"trainee")
 
     def compute_strategy(self, state, id_team, id_player):
-        a=state.player_state(id_team,id_player).position
-        b=state.ball.position
+        p1=state.player_state(id_team,id_player).position
+        a=state.ball.position
         v1=Vector2D(135,45)
         v2=Vector2D(45,45)
         if (id_team==1):
-            return SoccerAction(acceleration=b-a,shoot=v1-b)
+            return SoccerAction(acceleration=a-p1,shoot=v1-a)
         if (id_team==2):
-            return SoccerAction(acceleration=b-a,shoot=v2-b)
+            return SoccerAction(acceleration=a-p1,shoot=v2-a)
 
 # Create teams
 team1 = SoccerTeam(name="bataillon1")
 team2 = SoccerTeam(name="bataillon2")
 
 # Add players
-team1.add("dylan", EchauffementStrategy())  
-team2.add("kevin", EchauffementStrategy())  
+team1.add("HAL9000", EchauffementStrategy())  
+team2.add("MONOLITH", EchauffementStrategy())  
 
 # Create a match
 simu = VolleySimulation(team1, team2)

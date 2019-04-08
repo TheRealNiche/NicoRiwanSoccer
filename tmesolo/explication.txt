@@ -1,0 +1,12 @@
+Question 1
+Elle renvoie la balle de l'autre coté et essaie de viser le milieu du terrain adverse , les joueurs sont obsédes par la balle
+
+Question 2
+Le terrain est divise de sorte a ce que le joueur en possesion de la balle vise dans le coin du terrain qui lui est le plus opposé a son adversaire . J'identifie le joueur adverse dans une certaine zone puis j'envoie la balle de l'autre coté
+
+Question 3
+Mon joueur se deplace sur une ligne en suivant le joueur adverse jusqua ce que la balle soit suffisament proche de lui dans ce cas il fonce sur la balle 
+
+Question 4
+J'ai essayé de combiner les 2 dernieres strategy
+
